@@ -4,8 +4,22 @@
 }
 
 body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
   display: flex;
   justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
   font-size: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
