@@ -1,0 +1,49 @@
+header {
+  height: 100vh;
+}
+
+.header__superior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  height: 70%;
+}
+.imagen-perfil {
+  margin-top: 160px;
+  width: 280px;
+  height: 280px;
+  border-radius: 280px;
+  z-index: 4;
+}
+.header__inferior {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  height: 30%;
+
+}
+h2 {
+  position: absolute;
+  font-size: 28px;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.rectangulo {
+  position: absolute;
+  width: 460px;
+  height: 150px;
+  background-color: black;
+  z-index: 1;
+}
+.circle {
+  /* position: absolute; */
+  width: 420px;
+  height: 400px;
+  border-radius: 450px;
+  background-color: white;
+  z-index: 2;
+}
