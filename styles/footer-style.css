@@ -1,23 +1,20 @@
 footer {
   background-color: black;
   padding: 20px;
-  height: 200px;
+  height: 240px;
 }
-
 .social-media__title {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
   color: white;
+  letter-spacing: 1.5px;
 }
-
 .social-media__box {
   display: flex;
   justify-content: center;
 }
-
 .social-media__list {
   display: flex;
   justify-content: center;
@@ -25,7 +22,7 @@ footer {
   list-style: none;
   width: 40%;
 }
-a .social-media__red {
+a .social-media__img {
   background-color: white;
   display: inline-block;
   width: 80px;
@@ -36,11 +33,101 @@ a .social-media__red {
   margin-top: auto;
   margin-bottom: auto;
   z-index: 10;
+  transition: .4s ease-in-out all;
+}
+a .social-media__img:hover {
+  background-color: white;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 8px solid white;
+  border-radius: 100%;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 10;
+  transition: .4s ease-in-out all;
+}
+a .youtube-img:hover {
+  background-color: #c4302b;
+}
+a .instagram-img:hover {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  transition: .4s ease-in-out all;
+
+}
+a .facebook-img:hover {
+  background-color: #3b5998;
+  transition: .4s ease-in-out all;
 }
 .copyright {
   margin-top: 40px;
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
   color: white;
+}
+
+@media (max-width : 900px) {
+  footer {
+    padding: 20px;
+    height: 240px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .social-media__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px;
+  }
+  .social-media__box {
+    display: flex;
+    justify-content: center;
+  }
+  .social-media__list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+  }
+  a .social-media__img {
+    background-color: white;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 10;
+    transition: .2s ease-in-out all;
+  }
+  a .social-media__img:active {
+    background-color: white;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 8px solid white;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 10;
+    transition: .1s ease-in-out all;
+  }
+  a .youtube-img:active {
+    background-color: #c4302b;
+  }
+  a .instagram-img:active {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    transition: .1s ease-in-out all;
+  
+  }
+  a .facebook-img:active {
+    background-color: #3b5998;
+    transition: .1s ease-in-out all;
+  }
 }
