@@ -19,7 +19,7 @@ const cambiarNav = (entradas) => {
 const observador = new IntersectionObserver(cambiarNav, {
   root: null,
   rootMargin: "0px",
-  threshold: 0.1,
+  threshold: 0.5,
 });
 
 observador.observe(header);
