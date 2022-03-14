@@ -9,7 +9,6 @@ footer {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  letter-spacing: 1.5px;
 }
 .social-media__box {
   display: flex;
@@ -71,7 +70,6 @@ a .facebook-img:hover {
   footer {
     padding: 20px;
     height: 240px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   .social-media__title {
     font-size: 24px;
