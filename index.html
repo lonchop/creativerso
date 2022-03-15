@@ -20,12 +20,22 @@
     <header id="header">
       <nav id="navbar">
         <h1>creativerso</h1>
-        <div class="cuadro">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </div>
+        <button class="cuadro" id="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </nav>
+      <div id="despliega" class="mostrar-small">
+        <div class="despliega-off"></div>
+        <div id="despliega-on">
+          <!-- <ul class="opciones">
+            <li id="view-off">Portfolio</li>
+            <li class="view-off">About</li>
+            <li class="view-off">Contact</li>
+          </ul> -->
+        </div>
+      </div>
       <div class="header__superior">
         <img
           class="imagen-perfil"
@@ -111,6 +121,7 @@
         <p class="copyright listItem">Copyright © Creativerso</p>
       </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./src/view-nav.js"></script>
+    <script src="./src/button-menu.js"></script>
   </body>
 </html>
