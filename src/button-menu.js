@@ -4,41 +4,25 @@ var interruptor = false;
 
 const accion = () => {
   const menuDesplegable = document.getElementById("despliega");
-  // const visualizar = document.getElementById("view-off");
+  const bordeWhite = document.getElementById("navbar");
+  const view = document.getElementById("list");
 
   if (interruptor === false) {
-    menuDesplegable.classList.add("mostrar-large");
-    menuDesplegable.classList.remove("mostrar-small");
+    menuDesplegable.classList.remove("colapso-off");
+    menuDesplegable.classList.add("colapso-on");
+    view.classList.replace("view-off", "view-on");
+    bordeWhite.classList.add("active");
 
-    // visualizar.classList.add("view-on");
     return (interruptor = true);
+
   } else {
-    menuDesplegable.classList.remove("mostrar-large");
-    menuDesplegable.classList.add("mostrar-small");
-    // visualizar.classList.remove("view-on");
+    menuDesplegable.classList.remove("colapso-on");
+    menuDesplegable.classList.add("colapso-off");
+    view.classList.replace("view-on", "view-off");
+    bordeWhite.classList.remove("active");
+
     return (interruptor = false);
   }
 };
 
-const creaLista = () => {
-  const container = document.createElement("ul");
-  container.className = "opciones";
-
-  const list = document.createElement("li");
-  list.className = "view-on";
-
-  container.appendChild(list);
-
-  return container;
-};
-
-const mountNode = document.getElementById("despliega-on");
-
-const agregaNodo = () => {
-  const nuevoNodo = creaLista();
-  mountNode.appendChild(nuevoNodo);
-};
-
 boton.addEventListener("click", accion);
-s
-boton.addEventListener("click", agregaNodo);

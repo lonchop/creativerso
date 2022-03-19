@@ -3,7 +3,6 @@ const header = document.getElementById("header");
 const cambiarNav = (entradas) => {
   entradas.forEach((entrada) => {
     if (entrada.isIntersecting) {
-      console.log("hola");
       const nav = document.getElementById("navbar");
       nav.classList.add("large-navbar");
       nav.classList.remove("small-navbar");

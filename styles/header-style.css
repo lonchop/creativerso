@@ -38,10 +38,13 @@ header {
   min-width: 320px;
   right: 0;
   left: 0;
-  border-bottom: 1.2px solid white;
+  border-bottom: 1.2px solid var(--color-secundary);
   background-color: var(--color-secundary);
-  transition: .4s ease-in-out all;
+  transition: .3s ease-in-out all;
   z-index: 100;
+}
+#navbar.active {
+  border-bottom: 1.2px solid var(--color-primary);
 }
 .large-navbar {
   height: 70px;
@@ -70,49 +73,57 @@ nav .cuadro {
 }
 #despliega {
   position: fixed;
-}
-.mostrar-small {
-  width: 100%;
-  min-width: 320px;
-  height: 70px;
-  background-color: var(--color-secundary);
-  transition: .4s ease-in-out all;
-  z-index: 99;
-}
-.mostrar-large {
-  /* display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  align-items: center; */
-  width: 100%;
-  min-width: 320px;
-  height: 250px;
-  /* right: 0;
-  left: 0; */
-  background-color: var(--color-secundary);
-  transition: .4s ease-in-out all;
-  z-index: 99;
-}
-.despliega-off {
-  height: 70px;
-}
-#despliega-on {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 180px;
 }
-.opciones li {
+.colapso-off {
+  width: 100%;
+  min-width: 320px;
+  height: 70px;
+  background-color: var(--color-secundary);
+  transition: .3s ease-in-out all;
+  z-index: 99;
+}
+.colapso-on {
+  width: 100%;
+  min-width: 320px;
+  height: 210px;
+  background-color: var(--color-secundary);
+  transition: .3s ease-in-out all;
+  z-index: 99;
+}
+#list.view-off{
   opacity: 0;
-}
-.opciones .view-on {
-  opacity: 1;
+  margin-top: 70px;
   padding: 10px 15px;
   list-style: none;
   text-transform: uppercase;
   font-size: 2.0rem;
   color: var(--color-primary);
-  transition: .4s ease-in-out all;
+  transition: .3s ease-in-out all;
+}
+#list.view-on {
+  opacity: 1;
+  margin-top: 70px;
+  padding: 10px 15px;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 2.0rem;
+  color: var(--color-primary);
+  transition: .3s ease-in-out all;
+}
+#list.view-off li {
+  width: 100%;
+  height: 40px;
+}
+#list.view-on li {
+  width: 100%;
+  height: 40px;
+}
+#list a {
+  text-decoration: none;
+  color: var(--color-primary);
 }
 .icon-bar {
   width: 26px;
@@ -141,7 +152,6 @@ nav .cuadro {
   align-items: center;
   flex-direction: column;
   height: 30%;
-
 }
 .header__inferior h2 {
   position: absolute;
