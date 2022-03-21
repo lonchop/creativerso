@@ -1,4 +1,6 @@
 const boton = document.getElementById("button");
+const botonUno = document.getElementById("opcion-1");
+const botonDos = document.getElementById("opcion-2");
 
 var interruptor = false;
 
@@ -14,7 +16,6 @@ const accion = () => {
     bordeWhite.classList.add("active");
 
     return (interruptor = true);
-
   } else {
     menuDesplegable.classList.remove("colapso-on");
     menuDesplegable.classList.add("colapso-off");
@@ -26,3 +27,6 @@ const accion = () => {
 };
 
 boton.addEventListener("click", accion);
+
+botonUno.addEventListener("click", accion);
+botonDos.addEventListener("click", accion);
