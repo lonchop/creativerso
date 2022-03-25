@@ -3,12 +3,27 @@
 main {
   display: flex;
   justify-content: center;
-  z-index: 11;
   flex-wrap: wrap;
   justify-content: space-around;
-  border-bottom: 1.2px solid var(--color-primary);
-  background-color: var(--color-primary);
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-secundary);
   z-index: 10;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100px;
+  font-size: 2.0rem;
+}
+.title-container h3 {
+  margin-top: 100px;
+  color: var(--color-primary);
+  text-transform: uppercase;
 }
 .carrousel {
   width: 100%;
@@ -44,8 +59,8 @@ main {
   align-items: center;
 }
 .carrousel .punto {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background-color: var(--color-primary);
   margin: 0 12px;
   border-radius: 100%;
@@ -53,12 +68,12 @@ main {
   cursor: pointer;
 }
 .carrousel .punto.activo {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-color: var(--color-secundary);
   border: 2px solid var(--color-primary);
   cursor: default;
-  /* box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.0); */
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.0);
 
 }
 /* 

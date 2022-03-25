@@ -1,0 +1,41 @@
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  /* right: 0;
+  left: 0; */
+}
+.list-desk {
+  /* display: none */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.li-desk {
+  /* display: none; */
+  font-size: 2.2rem;
+  color: red
+}
+
+nav .cuadro {
+  display: none;
+}
+
+.small-navbar {
+  height: 70px;
+}
+.large-navbar {
+  height: 90px;
+}
+nav h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+
+
