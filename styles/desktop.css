@@ -10,7 +10,7 @@ nav h1 {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--color-primary);
-  margin-left: auto;
+  margin-left: 100px;
 }
 .pagina-title {
   text-decoration: none;
