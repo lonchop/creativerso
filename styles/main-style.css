@@ -1,16 +1,18 @@
 @import url("./header-style.css");
 
-main {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: var(--color-secundary);
-  z-index: 10;
-}
+  main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 320px;
+    height: 500px;
+    min-height: 100vh;
+    background-color: var(--color-secundary);
+    z-index: 10;
+  } 
+
 .title-container {
   display: flex;
   justify-content: center;
