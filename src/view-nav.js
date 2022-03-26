@@ -10,7 +10,6 @@ const cambiarNav = (entradas) => {
       const nav = document.getElementById("navbar");
       nav.classList.add("small-navbar");
       nav.classList.remove("large-navbar");
-      console.log("chao");
     }
   });
 };

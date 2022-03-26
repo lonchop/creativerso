@@ -57,11 +57,12 @@ nav .cuadro {
 .social-media__list {
   display: flex;
   justify-content: center;
-  justify-content: space-evenly;
+  /* justify-content: space-around; */
   list-style: none;
   width: 100%;
 }
 a .social-media__img {
+  margin: 0 64px;
   background-color: white;
   display: inline-block;
   width: 100px;
