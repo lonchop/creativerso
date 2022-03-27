@@ -125,10 +125,6 @@ nav .cuadro {
   color: var(--color-primary);
   transition: 0.3s ease-in-out all;
 }
-#list.view-off .li {
-  width: 100%;
-  height: 40px;
-}
 #list.view-on .li {
   width: 100%;
   height: 40px;
