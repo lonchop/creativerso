@@ -7,7 +7,6 @@ footer {
   min-width: 320px;
   min-height: 50vh;
   background-color: var(--color-primary);
-  /* display:none; */
 }
 .social-media__title {
   font-size: 2.4rem;
@@ -42,25 +41,12 @@ a .social-media__img {
   margin-bottom: auto;
   z-index: 10;
 }
-/* a .social-media__img:hover {
-  background-color: white;
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  border: 8px solid white;
-  border-radius: 100%;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  z-index: 10;
-  transition: .3s ease-in-out all;
-} */
 a .youtube-img {
   background-color: #c4302b;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1023px) {
   a .instagram-img {
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    background: var(--color-instagram);
   }
 }
 a .facebook-img {

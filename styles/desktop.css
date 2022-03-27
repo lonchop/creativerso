@@ -1,3 +1,5 @@
+@import url("./header-style.css");
+
 #navbar {
   position: fixed;
   display: flex;
@@ -48,8 +50,8 @@ nav .cuadro {
   font-size: 2.8rem;
 }
 .carrousel img {
-  width: 360px;
-  height: 360px;
+  width: 60vw;
+  height: 70vh;
 }
 .social-media__title {
   font-size: 2.8rem;
@@ -57,42 +59,40 @@ nav .cuadro {
 .social-media__list {
   display: flex;
   justify-content: center;
-  /* justify-content: space-around; */
   list-style: none;
   width: 100%;
 }
 a .social-media__img {
   margin: 0 64px;
-  background-color: white;
+  background-color: var(--color-primary);
   display: inline-block;
   width: 100px;
   height: 100px;
-  border: 2px solid white;
+  border: 2px solid var(--color-primary);
   border-radius: 100%;
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
   z-index: 10;
-  transition: .4s ease-in-out all;
+  transition: 0.3s ease-in-out all;
 }
 a .social-media__img:hover {
-  background-color: white;
   display: inline-block;
   width: 100px;
   height: 100px;
-  border: 8px solid white;
+  border: 8px solid var(--color-primary);
   border-radius: 100%;
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
   z-index: 10;
-  transition: .4s ease-in-out all;
+  transition: 0.3s ease-in-out all;
 }
 a .youtube-img:hover {
   background-color: #c4302b;
 }
 a .instagram-img:hover {
-  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  background: var(--color-instagram)
 }
 a .facebook-img:hover {
   background-color: #3b5998;
