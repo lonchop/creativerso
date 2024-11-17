@@ -9,7 +9,7 @@
     min-width: 320px;
     height: 500px;
     min-height: 100vh;
-    background-color: var(--color-secundary);
+    background-color: var(--color-secondary);
     z-index: 10;
   } 
 
@@ -33,7 +33,7 @@
 }
 .carrousel .grande{
   width: 400%;
-  background-color: var(--color-secundary);
+  background-color: var(--color-secondary);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -44,7 +44,7 @@
 }
 .carrousel img {
   width: calc( 100% / 4 );
-  background-color: var(--color-secundary);
+  background-color: var(--color-secondary);
   width: 300px;
   height: 300px;
   border: 2px solid var(--color-primary);
@@ -52,7 +52,7 @@
 .carrousel .puntos {
   list-style: none;
   width: 100%;
-  background-color: var(--color-secundary);
+  background-color: var(--color-secondary);
   padding-bottom: 0px;
   display: flex;
   flex-flow: row nowrap;
@@ -71,7 +71,7 @@
 .carrousel .punto.activo {
   width: 24px;
   height: 24px;
-  background-color: var(--color-secundary);
+  background-color: var(--color-secondary);
   border: 2px solid var(--color-primary);
   cursor: default;
   box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.0);

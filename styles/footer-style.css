@@ -12,7 +12,7 @@ footer {
   font-size: 2.4rem;
   text-align: center;
   text-transform: uppercase;
-  color: var(--color-secundary);
+  color: var(--color-secondary);
 }
 .social-media__box {
   display: flex;
@@ -56,5 +56,5 @@ a .facebook-img {
   margin-top: 40px;
   text-align: center;
   font-size: 16px;
-  color: var(--color-secundary);
+  color: var(--color-secondary);
 }
